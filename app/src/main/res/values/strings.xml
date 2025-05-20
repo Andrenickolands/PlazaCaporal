@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ejemplo</string>
+    <string name="telefono">Telefono</string>
+    <string name="registro_de_usuario">Registro de Usuario</string>
+</resources>

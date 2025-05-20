@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Background">
+
+
+    <!-- ScrollView para formulario -->
+
+    <ImageButton
+        android:id="@+id/btnBack4"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/Background"
+        android:contentDescription="Mapa"
+        android:src="@drawable/btnback" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="0dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+
+            <!-- Título -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regístrate"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Campos de entrada -->
+            <EditText
+                android:id="@+id/et_nombres"
+                style="@style/InptGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombres"/>
+
+            <EditText
+                android:id="@+id/et_apellidos"
+                style="@style/InptGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellidos"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_celular"
+                style="@style/InptGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Celular"
+                android:inputType="phone"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_correo"
+                style="@style/InptGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_fecha_nacimiento"
+                style="@style/InptGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de nacimiento"
+                android:focusable="false"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_contrasena"
+                style="@style/InptGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_confirmar_contrasena"
+                style="@style/InptGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Checkboxes -->
+            <CheckBox
+                android:id="@+id/check_terminos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Acepto términos y condiciones" />
+
+            <CheckBox
+                android:id="@+id/check_politicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Acepto políticas de privacidad" />
+
+            <!-- Botón de registro -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_registrarse"
+                style="@style/BtnPimary"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/check_politicas"
+                android:text="Registrarse" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
