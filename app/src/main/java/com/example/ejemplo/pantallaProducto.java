@@ -59,7 +59,7 @@ public class pantallaProducto extends AppCompatActivity {
 
     private void recibirDatos() {
         // URL del servidor
-        String url = "http://192.168.100.109:8082/productos";
+        String url = "http://192.168.100.109:8080/productos";
 
         // Crear la cola de solicitudes con Volley
         RequestQueue queue = Volley.newRequestQueue(this);
